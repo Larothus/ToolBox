@@ -9,4 +9,4 @@ def extract_hue(infile):
 	rgb_image = imread(infile)
 	hsv_image = rgb_to_hsv(rgb_image)
 	hue_image = -hsv_image[:,:,0]
-	imsave(fname='%s_hue.png' %(infile.split('.')[0]),arr=hue_image,cmap='gray')
+	imsave(fname='%s-hue.png' %(infile.split('.')[0]),arr=hue_image,cmap='gray')
